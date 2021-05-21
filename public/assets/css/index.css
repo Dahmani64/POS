@@ -1,0 +1,295 @@
+﻿
+.overflow-clip {
+  text-overflow: clip;
+}
+ html{
+	height: 100%;
+	  }
+
+	  body{
+		 margin: 0px;
+		height: 100%;
+	  }
+    
+     #body-article{
+       height:45%;
+       overflow: scroll;
+    }
+    
+/*bouton produit ne dépasse pas*/
+#article div{
+  overflow: hidden;
+}
+#controle div{
+  overflow: hidden;
+}
+#nav{
+  overflow: hidden;
+}
+
+/*caisse view style*/
+#header-article div {
+  border:1px solid gainsboro;
+  text-align: center;
+}
+/* fixed header table caisse*/
+#tableCaisse th {
+  vertical-align: bottom;
+  background-color:  gray;
+  color: #fff;
+  border:  1px solid whitesmoke;
+}
+
+#tableCaisse th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#tableCaisse th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+#tableCaisse th[scope=row] {
+  vertical-align: top;
+  color: inherit;
+  background-color: inherit;
+  background: linear-gradient(90deg, transparent 0%, transparent calc(100% - .05em), #d6d6d6 calc(100% - .05em), #d6d6d6 100%);
+}
+/* table caisse**/
+/* fixed header table list commande*/
+#tableListCommande th {
+  vertical-align: bottom;
+ 
+  color: #fff;
+  border:  1px solid whitesmoke;
+}
+
+#tableListCommande th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#tableListCommande th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+#tableListCommande th[scope=row] {
+  vertical-align: top;
+  color: inherit;
+  background-color: inherit;
+  background: linear-gradient(90deg, transparent 0%, transparent calc(100% - .05em), #d6d6d6 calc(100% - .05em), #d6d6d6 100%);
+}
+/* table list Commande**/
+.row tbody tr.highlight td {
+  background-color: rgb(200, 140, 240);
+}
+
+body{
+  background-color:#dcdcdc;
+}
+[class*="col"] { 
+    margin:0px;
+    padding: 0px;
+  }
+ 
+  .row{
+    margin:0px;
+    padding: 0px;
+  }
+  
+  /*
+  table:nth-of-type(2) th:not([scope=row]):first-child {
+    left: 0;
+    z-index: 3;
+    background: linear-gradient(90deg, #666 0%, #666 calc(100% - .05em), #ccc calc(100% - .05em), #ccc 100%);
+  }
+
+  /**/
+  /* Strictly for making the scrolling happen. */
+ 
+/*
+th[scope=row] + td {
+  min-width: 24em;
+}
+
+th[scope=row] {
+  min-width: 20em;
+}
+/**/
+
+#tableCaisse{
+
+  border-top: 5px solid gray;
+}
+#tableCaisse  td{
+  border:1px solid gainsboro;
+  padding:0px;
+  margin: auto;
+  border:  1px solid whitesmoke;
+  }
+  #calculatrice button{
+   width:100%;
+   height:50px;
+   margin-bottom: 1px;
+   border:1px solid gray;
+   
+  }
+  #produit button{
+    height:100%;
+    border-radius: 1px;
+    margin:0%;
+    border-bottom: none;
+    border: 1px solid #afacac;
+    width: 100%;
+   
+   }
+
+   #produit #nav  button {
+  background-color: rgba(19, 146, 7, 0.959);
+  color:white;
+   }
+   #produit #article  button {
+    background-color: rgb(120, 120, 252);
+    color:white;
+     }
+
+
+   #calculatrice .quatrieme-button{
+    
+    background-color: green;
+    color:white;
+   }
+
+/**
+**
+**
+**
+**
+**/
+
+
+
+/* menu de navigastion supérieur*/
+#bartools button{
+  border:none;
+}
+
+   /* ticket*/
+   #conteneurTicket{
+     
+    width:250px;
+   
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.dasherbar{
+border: 1px  dashed white;}
+
+/* fenetre modal */
+.boutons{ 
+  padding: 10px; 
+} 
+dialog{ 
+  border-radius: 10px; 
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); 
+} 
+dialog::backdrop{ 
+  background-color: rgba(0, 0, 0, 0.6); 
+} 
+ 
+
+
+@media all and (max-width: 576px){
+      #calculator{ display:none;}
+      #body-article{height: 200px;}
+     /* #tableCaisse{height: 200px;}
+      #navADM div button{ height: 100%;}
+      #navADM div{ height: 100%;}
+      */
+}
+
+
+@media all and (min-width: 577px){
+  /**
+  **
+  *** TOUT LES ARTICLE PLUS LES BOUTON DU CONTROLE
+  *****
+  *******
+  **/
+  
+  #body-article{
+       height:45%;
+    }
+  #bartools{height: 10%;}
+  #caisse{ height: 90%;}
+  #bodycaisse{ height: 100%;}
+  #sales-cal-total{ height: 100%;}
+
+  #produit{height: 100%;}
+
+  #navADM{height: 10%;}
+  #navADM div{height: 100%;}
+  #navADM div button{ height: 100%;}
+  
+  #nav{height: 10%;}
+  #nav div{height: 100%;}
+  #nav div button{ height: 100%;}
+
+  #article{height: 60%;}
+  #article div{height:20%;}
+  #article button{ height:100%;}
+
+  #controle{height: 20%;}
+  #controle div{height: 50%;}
+  #controle div button{height: 100%;}
+ 
+ /**
+  **
+  *** TOUT LES ARTICLE PLUS LES BOUTON DU CONTROLE
+  *****
+  ****
+  */
+
+
+  /**
+  **
+  *** calculatrice + table sale + total
+  *****
+  ****
+  */
+  #calculatrice{
+    height: 100%;
+  }
+  #calculatrice .row{
+    height: 100%;
+  }
+  #calculatrice div{
+    height: 25%;
+  }
+  #calculatrice div button{
+    height: 100%;
+  }
+
+#affichTotal{
+  height: 100%;
+}
+#affichTotal .row{
+  height: 100%;
+}
+#affichTotal .row div{
+  height: 50%;
+}
+
+#bodyCaisse{
+  height: 100%;
+}
+  }
